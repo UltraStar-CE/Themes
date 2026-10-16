@@ -1,41 +1,37 @@
 # Themes for USCE
 
-Themes and skins control the appearance of UltraStar Community Edition.
-The karaoke game lives in [USCE](https://github.com/UltraStar-CE/USCE).
-Read [README.md](README.md) for theme structure, installation, and inherited
-compatibility notes. This fork initially preserves the upstream assets.
+We maintain themes and skins for [UltraStar Community Edition](https://github.com/UltraStar-CE/USCE).
+[README.md](README.md) describes installation, theme structure and compatibility.
+Modern and Deluxe menu backgrounds use our USCE star and microphone identity.
+Other theme artwork retains its original creator credits and notices.
 
-This repository derives from
-[UltraStar Deluxe Themes](https://github.com/UltraStar-Deluxe/Themes).
-Preserve theme creator names, asset attribution, and all existing notices.
-Before publishing new bundles, record the source and license or permission for
-each included theme, image, font, video, and other asset. A repository-wide
-license has not been established by this setup PR; do not infer one from the
-game's license.
+## Contributing
 
-Record each asset in a `PROVENANCE.md` file in its theme directory, with a
-relative asset path, creator, original source URL, license identifier or permission
-reference, and changes made. Include applicable LICENSE/NOTICE files alongside
-the theme. Unknown permissions must remain explicit and block redistribution
-until established.
+For a theme PR, we ask for the game commit tested, affected screens, screenshots
+and provenance for new assets. Modern and Deluxe are the baseline; other themes
+need compatibility testing against the actual game build.
 
-For changes, include the game commit you tested, affected screens, screenshots,
-and provenance for new assets. Existing upstream notes warn that themes beyond
-Modern and Deluxe require newer theme support. Verify compatibility against
-the actual USCE game build before claiming a theme works.
+Each theme's `PROVENANCE.md` records asset paths, creators, original source URLs,
+license identifiers or permission references, and adaptations. Applicable
+LICENSE and NOTICE files accompany the theme. Unresolved permissions block
+redistribution; the game's license does not establish a license for every asset.
 
-The community's
-[governance](https://github.com/UltraStar-CE/USCE/blob/HEAD/GOVERNANCE.md),
-[contribution process](https://github.com/UltraStar-CE/USCE/blob/HEAD/CONTRIBUTING.md),
-and [conduct policy](https://github.com/UltraStar-CE/USCE/blob/HEAD/CODE_OF_CONDUCT.md)
-are being established in [the foundation PR](https://github.com/UltraStar-CE/USCE/pull/1).
-During the recorded solo bootstrap phase, the sole maintainer may merge after
-passing CI and addressing review findings. Once a second human developer joins,
-require one independent approval; once there are more than four active developers,
-require two. The governance defines the active roster. Maintainers use PRs too.
-No automatic merges.
+We use the shared [contribution policy](https://github.com/UltraStar-CE/USCE/blob/HEAD/CONTRIBUTING.md),
+[governance](https://github.com/UltraStar-CE/USCE/blob/HEAD/GOVERNANCE.md) and
+[community conduct](https://github.com/UltraStar-CE/USCE/blob/HEAD/CODE_OF_CONDUCT.md).
+Our current solo phase requires passing checks and a recorded maintainer review.
+One independent human approval becomes required when a second developer joins;
+two are required with more than four active developers. Maintainers follow the
+same PR route. AI feedback is advisory; a human is responsible for understanding,
+modifying, explaining and defending submitted code. We do not merge automatically.
 
-The USCE upstream tracker follows UltraStar-Deluxe/Themes:main. Record source
-commits and compatibility adjustments in human-reviewed adaptation PRs. The
-initial automation inventories changes; asset and theme adaptations remain
-maintainer-led work.
+We keep at most five open PRs per author across USCE, MXE and Themes, including
+drafts and automated candidates. An excess PR is closed with an explanation and
+can be reopened when a slot becomes available.
+
+## Upstream
+
+We build on [UltraStar Deluxe Themes](https://github.com/UltraStar-Deluxe/Themes),
+preserving creator names, attribution and existing notices. Upstream assessment
+follows their `main` branch. Adaptation PRs record source commits and compatibility
+changes; theme and asset adaptations remain maintainer-led work.
