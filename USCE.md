@@ -26,7 +26,9 @@ same PR route. AI feedback is advisory; a human is responsible for understanding
 modifying, explaining and defending submitted code. We do not merge automatically.
 
 We keep at most five open PRs per author across USCE, MXE and Themes, including
-drafts and automated candidates. An excess PR is closed with an explanation and
+drafts and automated issue candidates. Automated upstream assessments and
+adaptations of merged upstream changes are exempt and do not count toward the
+limit. An excess PR is closed with an explanation and
 can be reopened when a slot becomes available.
 
 ## Upstream
