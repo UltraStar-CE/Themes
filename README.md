@@ -1,18 +1,18 @@
-# UltraStar Deluxe Themes
+# USCE themes
 
-This repository contains themes and skins for [UltraStar Deluxe](https://usdx.eu/).
-
-**Note that except for the Modern and Deluxe theme, these themes do not work with the USDX Release version yet!**
-Please use one of these versions if you want to use any of the other themes:
-- https://github.com/UltraStar-Deluxe/USDX/pull/1129
-- https://github.com/UltraStar-Deluxe/USDX/pull/1249
+We maintain themes and skins for [UltraStar Community Edition](https://github.com/UltraStar-CE/USCE).
+Modern and Deluxe are the baseline themes. Other included themes are experimental;
+compatibility depends on the game build and theme support. We welcome testing
+feedback with the exact build and affected screens.
 
 Themes define the position, size, color, text, and behavior of UI elements. Skins
 map the texture names used by a theme to image, video, and other asset files.
 Together they provide the visual appearance of the game menus, song selection,
 singing screen, score screen, party mode, jukebox, editor, and popups.
 
-## Included themes (with Screenshots)
+## Included themes
+
+The screenshots below are inherited upstream references and may show earlier branding.
 
 ### Modern
 <img width="400" height="250" alt="screenshot0001" src="https://github.com/user-attachments/assets/ed14a959-b47c-43a8-b999-96dcc695105e" />
@@ -58,10 +58,9 @@ singing screen, score screen, party mode, jukebox, editor, and popups.
 
 ## Installing
 
-Copy this repository's contents into the `themes` directory of an UltraStar
-Deluxe installation.
+Copy this repository's contents into the `themes` directory of a USCE installation.
 
-In the main USDX source tree this directory is:
+In the USCE source tree this directory is:
 
 ```text
 game/themes/
@@ -71,7 +70,7 @@ Each theme has a top-level `.ini` file, for example `Modern.ini`, and one
 directory containing the skin `.ini` files and assets for that theme, for example
 `Modern/`.
 
-After copying or updating themes, restart UltraStar Deluxe. Themes and skins can
+After copying or updating themes, restart USCE. Themes and skins can
 then be selected in:
 
 ```text
@@ -107,7 +106,7 @@ BaseTheme = Modern
 
 Useful fields:
 
-- `Name`: display name shown by USDX.
+- `Name`: display name shown by USCE.
 - `Creator`: theme author.
 - `US_Version`: supported USDX theme format. The included themes currently use
   `USD 110`.
@@ -195,3 +194,10 @@ When contributing a change, it helps to:
 UltraStar Deluxe source code and releases are maintained at:
 
 https://github.com/UltraStar-Deluxe/USDX
+
+## Contributing and credits
+
+We review theme changes through PRs. [USCE.md](USCE.md) explains testing,
+asset provenance and the community process. These themes derive from
+[UltraStar Deluxe Themes](https://github.com/UltraStar-Deluxe/Themes); original
+creators and asset notices remain credited.
