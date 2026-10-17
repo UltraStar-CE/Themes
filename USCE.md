@@ -25,11 +25,9 @@ two are required with more than four active developers. Maintainers follow the
 same PR route. AI feedback is advisory; a human is responsible for understanding,
 modifying, explaining and defending submitted code. We do not merge automatically.
 
-We keep at most five open PRs per author across USCE, MXE and Themes, including
-drafts and automated issue candidates. Automated upstream assessments and
-adaptations of merged upstream changes are exempt and do not count toward the
-limit. An excess PR is closed with an explanation and
-can be reopened when a slot becomes available.
+Theme PR submissions are not capped. Automated Codex review requests use the
+shared review queue described in the game's contribution policy; waiting for
+an AI review does not close a contribution.
 
 ## Upstream
 
