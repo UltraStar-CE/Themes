@@ -12,6 +12,12 @@ singing screen, score screen, party mode, jukebox, editor, and popups.
 
 ## Included themes
 
+### Clarity
+
+A Modern-derived theme with flat panels and larger, opaque singing lyrics.
+Relocated unchanged from dgruss's May 20, 2026 USCE theme commit; see
+[provenance](Clarity/PROVENANCE.md). Requires the included Modern base theme.
+
 The screenshots below are inherited upstream references and may show earlier branding.
 
 ### Modern
