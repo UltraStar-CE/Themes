@@ -1,0 +1,3 @@
+Optional USCE prototype inspired by @aveiver Midnight, USDX commit 6f756edb2d91aaa552c46516c22300d6116fc2eb.
+Uses shared USCE controls and the Modern base theme. No fork renderer or queue code is imported.
+Included white masks are procedural UI geometry.
