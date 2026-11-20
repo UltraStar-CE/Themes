@@ -1,0 +1,4 @@
+Karaoke theme adapted from @3Ryuusei3 / USDX, commit 82668398840dc06d1c30ba82ab13090385ff14c0.
+Original GPL-2.0 project license applies to the theme source and generated artwork.
+Inter and JetBrains Mono retain the license notices in fonts/Inter and fonts/JetBrainsMono.
+USCE adaptation keeps shared controls, generic player templates and scaling.
