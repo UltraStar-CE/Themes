@@ -8,7 +8,7 @@ feedback with the exact build and affected screens.
 Themes define the position, size, color, text, and behavior of UI elements. Skins
 map the texture names used by a theme to image, video, and other asset files.
 Together they provide the visual appearance of the game menus, song selection,
-singing screen, score screen, party mode, jukebox, editor, and popups.
+singing screen, score screen, party mode, editor, and popups.
 
 ## Included themes
 
