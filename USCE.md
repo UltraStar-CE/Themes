@@ -5,6 +5,10 @@ We maintain themes and skins for [UltraStar Community Edition](https://github.co
 Modern and Deluxe menu backgrounds use our USCE star and microphone identity.
 Other theme artwork retains its original creator credits and notices.
 
+See [artwork provenance](ARTWORK-PROVENANCE.md) for dated changes and source
+evidence. The [USCE fork notice](https://github.com/UltraStar-CE/USCE/blob/d331e137/COPYRIGHT.txt)
+describes the game project and its relationship to USDX.
+
 ## Contributing
 
 For a theme PR, we ask for the game commit tested, affected screens, screenshots
