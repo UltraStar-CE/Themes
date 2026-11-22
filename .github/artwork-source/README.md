@@ -22,9 +22,7 @@ Invent all imagery; no reference or recreation of any existing image."
 The wordmark comes from [USCE branding](https://github.com/UltraStar-CE/USCE/blob/a2072d52bfc5d7a006e14d10bcc94ab1bc8b1008/branding/usce-logo-horizontal.png).
 The composition keeps the star and microphone, renders the dark letters in
 white for use on dark backgrounds, and moves the wordmark to the center on
-loading screens. Modern uses a monochrome star and the short USCE wordmark
-without the subtitle. Deluxe uses the full wordmark. The script verifies the
-branding source checksum.
+loading screens. The script verifies the branding source checksum.
 
 Run `python .github/artwork-source/build-backgrounds.py PATH_TO_USCE_LOGO` with
 Python and Pillow. It preserves the existing 800x600 and 1672x941 asset sizes.

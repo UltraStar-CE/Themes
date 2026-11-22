@@ -45,25 +45,7 @@ def dark_surface_wordmark(source):
     return logo.crop(box)
 
 
-def modern_wordmark(source):
-    """Use a monochrome star and short USCE wordmark for Modern."""
-    logo = Image.open(BytesIO(source)).convert("RGBA")
-    alpha = logo.getchannel("A")
-    star = ImageOps.grayscale(logo.crop((0, 0, 855, logo.height)))
-    star = star.point(lambda value: 128 + value // 2).convert("RGBA")
-    star.putalpha(alpha.crop((0, 0, 855, logo.height)))
-
-    wordmark = Image.new("RGBA", logo.size)
-    wordmark.paste(star)
-    letters_box = (855, 0, logo.width, 565)
-    letters_alpha = alpha.crop(letters_box)
-    letters = Image.new("RGBA", letters_alpha.size, "white")
-    letters.putalpha(letters_alpha)
-    wordmark.paste(letters, letters_box[:2])
-    return wordmark.crop(wordmark.getbbox())
-
-
-def branded(background, wordmark, *, loading=False, top_margin=0.027):
+def branded(background, wordmark, *, loading=False):
     output = background.copy()
     width, height = output.size
     logo_width = round(width * (0.44 if loading else 0.14))
@@ -72,7 +54,7 @@ def branded(background, wordmark, *, loading=False, top_margin=0.027):
     if loading:
         position = ((width - logo_width) // 2, (height - logo_height) // 2)
     else:
-        position = (width - logo_width - round(width * 0.026), round(height * top_margin))
+        position = (width - logo_width - round(width * 0.026), round(height * 0.027))
     output.paste(logo.convert("RGB"), position, logo.getchannel("A"))
     return output
 
@@ -85,7 +67,6 @@ def main():
     if hashlib.sha256(logo).hexdigest() != "daf828018bdb36058091cef2edcc4ca1e123bdee2d950302d2d48ac9b08d9375":
         parser.error("The wordmark must match the source listed in the branding notice.")
     wordmark = dark_surface_wordmark(logo)
-    modern = modern_wordmark(logo)
 
     backgrounds = {"blue": blue_background(MENU_SIZE)}
     for season in SEASONS:
@@ -96,17 +77,15 @@ def main():
     for theme in ("Modern", "Deluxe"):
         for season, background in backgrounds.items():
             path = ROOT / theme / f"[bg-main]{season}.jpg"
-            branded(background, modern if theme == "Modern" else wordmark,
-                    top_margin=0.05 if theme == "Modern" else 0.027).save(
-                        path, quality=93, optimize=True)
+            branded(background, wordmark).save(path, quality=93, optimize=True)
 
     for theme, season in (("Modern", "blue"), ("Modern", "winter"),
                           ("Deluxe", "fall"), ("Deluxe", "summer")):
         path = ROOT / theme / f"[bg-load]{season}.png"
-        branded(backgrounds[season], modern if theme == "Modern" else wordmark, loading=True).save(path, optimize=True)
+        branded(backgrounds[season], wordmark, loading=True).save(path, optimize=True)
 
     path = ROOT / "Modern" / "[bg-song]blue-wide.png"
-    branded(blue_background(WIDE_SIZE), modern, top_margin=0.05).save(path, optimize=True)
+    branded(blue_background(WIDE_SIZE), wordmark).save(path, optimize=True)
 
 
 if __name__ == "__main__":
