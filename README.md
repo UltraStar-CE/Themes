@@ -204,6 +204,6 @@ https://github.com/UltraStar-Deluxe/USDX
 ## Contributing and credits
 
 We review theme changes through PRs. [USCE.md](USCE.md) explains testing,
-asset provenance and the community process. These themes derive from
-[UltraStar Deluxe Themes](https://github.com/UltraStar-Deluxe/Themes); original
-creators and asset notices remain credited.
+asset provenance and the community process. This collection brings together
+themes from several sources, including [UltraStar Deluxe Themes](https://github.com/UltraStar-Deluxe/Themes),
+and themes created for USCE. Each theme keeps its original credits and notices.

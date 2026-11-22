@@ -5,9 +5,8 @@ We maintain themes and skins for [UltraStar Community Edition](https://github.co
 Modern and Deluxe menu backgrounds use our USCE star and microphone identity.
 Other theme artwork retains its original creator credits and notices.
 
-See [artwork provenance](ARTWORK-PROVENANCE.md) for dated changes and source
-evidence. The [USCE fork notice](https://github.com/UltraStar-CE/USCE/blob/d331e137/COPYRIGHT.txt)
-describes the game project and its relationship to USDX.
+See [artwork provenance](ARTWORK-PROVENANCE.md) for sources, credits and dated
+changes to artwork in this collection.
 
 ## Contributing
 
@@ -33,9 +32,9 @@ Theme PR submissions are not capped. Automated Codex review requests use the
 shared review queue described in the game's contribution policy; waiting for
 an AI review does not close a contribution.
 
-## Upstream
+## Theme sources
 
-We build on [UltraStar Deluxe Themes](https://github.com/UltraStar-Deluxe/Themes),
-preserving creator names, attribution and existing notices. Upstream assessment
-follows their `main` branch. Adaptation PRs record source commits and compatibility
-changes; theme and asset adaptations remain maintainer-led work.
+This collection includes themes from [UltraStar Deluxe Themes](https://github.com/UltraStar-Deluxe/Themes),
+independent creators, and other projects, alongside themes created for USCE.
+Each theme retains its original creator credits and license notices.
+Adaptation PRs record the specific source and compatibility changes.
