@@ -7,7 +7,7 @@ from random import Random
 import argparse
 import hashlib
 
-from PIL import Image, ImageDraw, ImageOps
+from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / ".github" / "artwork-source"
@@ -49,17 +49,9 @@ def modern_wordmark(source):
     """Use a monochrome star and short USCE wordmark for Modern."""
     logo = Image.open(BytesIO(source)).convert("RGBA")
     alpha = logo.getchannel("A")
-    star = Image.new("RGBA", (855, logo.height))
-    points = [(503, 52), (604, 280), (827, 295), (652, 448),
-              (715, 677), (503, 545), (289, 677), (353, 448),
-              (174, 295), (402, 280)]
-    draw = ImageDraw.Draw(star)
-    draw.polygon(points, fill=(205, 219, 235, 255))
-    draw.rounded_rectangle((436, 264, 567, 464), radius=65, fill=(32, 65, 105, 255))
-    draw.rounded_rectangle((486, 436, 519, 518), radius=16, fill=(32, 65, 105, 255))
-    for y in (318, 358, 398):
-        draw.rounded_rectangle((465, y, 539, y + 12), radius=6,
-                               fill=(205, 219, 235, 255))
+    star = ImageOps.grayscale(logo.crop((0, 0, 855, logo.height)))
+    star = star.point(lambda value: 128 + value // 2).convert("RGBA")
+    star.putalpha(alpha.crop((0, 0, 855, logo.height)))
 
     wordmark = Image.new("RGBA", logo.size)
     wordmark.paste(star)
