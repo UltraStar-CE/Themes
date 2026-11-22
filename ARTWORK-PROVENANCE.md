@@ -7,6 +7,12 @@
 | Modern `[main]songCover.png` | 2026-10-19: Rebranded the inherited cover badge. [Source](https://github.com/UltraStar-CE/Themes/commit/cd9bb3a) | Permission to adapt the underlying badge remains unverified. |
 | Modern `[bg-song]blue-wide.png` | 2026-10-31: Adapted the Blue gradient and artwork for the wider search header. [Source](https://github.com/UltraStar-CE/Themes/commit/f9bc68f) | The port refers to inherited licensing without identifying asset-specific terms. |
 
+[Themes #42](https://github.com/UltraStar-CE/Themes/pull/42) proposes replacements
+for the affected backgrounds using new artwork and the USCE wordmark. The
+[badge removal](https://github.com/UltraStar-CE/Themes/pull/41) is paired with the
+game's [rendered cover tiles](https://github.com/UltraStar-CE/USCE/pull/465).
+These changes are pending. The table describes the audited snapshot.
+
 ## Other theme sources
 
 - **Karaoke:** Adapted on 2026-10-30 from [3Ryuusei3's source revision](https://github.com/3Ryuusei3/USDX/tree/82668398840dc06d1c30ba82ab13090385ff14c0).
