@@ -10,6 +10,9 @@ map the texture names used by a theme to image, video, and other asset files.
 Together they provide the visual appearance of the game menus, song selection,
 singing screen, score screen, party mode, editor, and popups.
 
+See [theme credits](CREDITS.md) and [artwork and license records](ARTWORK-PROVENANCE.md)
+for original authors, asset-specific terms and unresolved provenance.
+
 ## Included themes
 
 [Theme screenshot gallery](https://ultrastar-ce.github.io/)
