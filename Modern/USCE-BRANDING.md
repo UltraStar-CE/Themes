@@ -1,8 +1,7 @@
 # USCE backgrounds
 
-Themes [#44](https://github.com/UltraStar-CE/Themes/pull/44) restored the
-previous `[bg-main]blue.jpg` after that replacement. The restored file is a
-blue gradient with the [USCE wordmark](https://github.com/UltraStar-CE/USCE/blob/a2072d52bfc5d7a006e14d10bcc94ab1bc8b1008/branding/usce-logo-horizontal.png).
+The [USCE wordmark](https://github.com/UltraStar-CE/USCE/blob/a2072d52bfc5d7a006e14d10bcc94ab1bc8b1008/branding/usce-logo-horizontal.png)
+is maintained in the USCE repository.
 
 The 2026-10-16 menu adaptations are documented in
 [their original commit](https://github.com/UltraStar-CE/Themes/commit/63af239).

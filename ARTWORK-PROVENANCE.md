@@ -29,10 +29,8 @@ USCE-specific bugs to the USCE tracker.
   [5cd309f](https://github.com/UltraStar-CE/Themes/commit/5cd309f). Themes
   [#42](https://github.com/UltraStar-CE/Themes/pull/42) replaced edited
   backgrounds with independently produced artwork, with [sources and build
-  instructions](.github/artwork-source/README.md). Themes
-  [#44](https://github.com/UltraStar-CE/Themes/pull/44) restored the previous
-  Modern Blue main background, a blue gradient with the USCE wordmark. See
-  the [Modern branding record](Modern/USCE-BRANDING.md) for the logo source.
+  instructions](.github/artwork-source/README.md). See the
+  [Modern branding record](Modern/USCE-BRANDING.md) for the wordmark source.
 - Themes [#41](https://github.com/UltraStar-CE/Themes/pull/41) removed
   `Modern/[main]songCover.png`, the Candy fallback badge, and the related
   skin mappings. Current bundles use the rendered title tiles from
