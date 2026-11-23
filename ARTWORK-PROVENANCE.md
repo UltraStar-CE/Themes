@@ -18,18 +18,24 @@ including archives and bundles that ship only a subset of the collection.
 
 ## USCE adaptations
 
+USCE uses its own logo on menu and loading screens so players can tell which
+game they are running and send bug reports to the right tracker. Shared themes
+and familiar layouts can make the projects easy to confuse. Distinct branding
+helps keep reports about USCE-specific behavior out of the upstream trackers.
+
 - Modern and Deluxe menu and loading artwork was adapted in
   [63af239](https://github.com/UltraStar-CE/Themes/commit/63af239) and
   [5cd309f](https://github.com/UltraStar-CE/Themes/commit/5cd309f). Themes
   [#42](https://github.com/UltraStar-CE/Themes/pull/42) replaced edited
   backgrounds with independently produced artwork, with [sources and build
   instructions](.github/artwork-source/README.md). Themes
-  [#44](https://github.com/UltraStar-CE/Themes/pull/44) subsequently restored
-  the previous Modern Blue main background. Its inherited artwork remains
-  in the unresolved inventory below.
-- Themes [#41](https://github.com/UltraStar-CE/Themes/pull/41) removed the old
-  fallback badges. USCE [#465](https://github.com/UltraStar-CE/USCE/pull/465)
-  supplies rendered title tiles in their place.
+  [#44](https://github.com/UltraStar-CE/Themes/pull/44) restored the previous
+  Modern Blue main background, a blue gradient with the USCE wordmark. See
+  the [Modern branding record](Modern/USCE-BRANDING.md) for the logo source.
+- Themes [#41](https://github.com/UltraStar-CE/Themes/pull/41) removed
+  `Modern/[main]songCover.png`, the Candy fallback badge, and the related
+  skin mappings. Current bundles use the rendered title tiles from
+  USCE [#465](https://github.com/UltraStar-CE/USCE/pull/465).
 - [Midnight's credits](Midnight/CREDITS.txt) distinguish the source design
   from the procedural textures in this collection. Its skin inherits Modern.
 - [Halloween's source note](Halloween/README.md) identifies its generated
@@ -39,7 +45,6 @@ including archives and bundles that ship only a subset of the collection.
 
 | Scope | Current evidence and follow-up |
 | --- | --- |
-| `Modern/[bg-main]blue.jpg` | The restored file matches the edited inherited file immediately before #42. Confirm terms for the original artwork or use a separately sourced replacement. |
 | Verdure Drippin and Springtime media | Their skin headers credit dreamscene.org and describe the videos as free for private or non-commercial use with all rights reserved. Find the original terms or explicit permission covering redistribution and the edited derivatives. The eight `[bg-video]*.avi` files and the static stills `[bg]drippin.jpg` and `[bg]springtime.jpg` need review together. |
 | WorldParty Argon and Neon | The creator credit is recorded. Argon skin headers credit some icons to Iconfinder under a generic Creative Commons reference. Identify the original listing, creator, exact license and icon files. Verify the sources and terms for the four bundled WorldParty video backgrounds independently. |
 | Candy, Deluxe and standalone Neon background videos | The theme sources establish the theme credits. Original video authorship and terms remain unverified for Candy's `[bg-main]clouds.AVI` and `[bg-main]options.AVI`, Deluxe's `[bg-video]_ocean.avi` and `[bg-video]ribbon.mov`, and Neon's `[bg-main]smoke.mp4` and `[bg-main]smoke_neon_sign.mp4`. |
