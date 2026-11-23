@@ -18,12 +18,6 @@ including archives and bundles that ship only a subset of the collection.
 
 ## USCE adaptations
 
-USCE is a fork of UltraStar Deluxe. We would have liked to keep the
-UltraStar Deluxe name, but using it for both projects would cause confusion,
-especially where they share themes and layouts. USCE uses its own name and
-logo so players can tell which version they are running and report
-USCE-specific bugs to the USCE tracker.
-
 - Modern and Deluxe menu and loading artwork was adapted in
   [63af239](https://github.com/UltraStar-CE/Themes/commit/63af239) and
   [5cd309f](https://github.com/UltraStar-CE/Themes/commit/5cd309f). Themes

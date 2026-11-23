@@ -1,5 +1,8 @@
 # USCE backgrounds
 
+The Modern theme and its inherited backgrounds come from the
+[UltraStar Deluxe project](https://github.com/UltraStar-Deluxe/USDX).
+
 The [USCE wordmark](https://github.com/UltraStar-CE/USCE/blob/a2072d52bfc5d7a006e14d10bcc94ab1bc8b1008/branding/usce-logo-horizontal.png)
 is maintained in the USCE repository.
 
