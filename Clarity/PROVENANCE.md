@@ -9,7 +9,7 @@ panel/progress textures are copied byte-for-byte; no new external media is added
 - Imported game-branch commit: [2afb421875818fe2a5d9b7d1e50e4e430f408319](https://github.com/UltraStar-CE/USCE/commit/2afb421875818fe2a5d9b7d1e50e4e430f408319).
 - Imported paths: `game/themes/Clarity.ini` and `game/themes/Clarity/*`, now at
   the Themes repository root. Git import preserves the original author/date.
-- The source project's [GPL-2.0 license](https://github.com/UltraStar-CE/USCE/blob/2afb421875818fe2a5d9b7d1e50e4e430f408319/LICENSE)
+- The source project's [license text](LICENSE)
   and existing creator attribution are retained; relocation does not relicense
   upstream artwork.
 

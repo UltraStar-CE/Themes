@@ -1,34 +1,52 @@
-# USCE artwork changes and source notices
+# Artwork and license records
 
-| Artwork | USCE adaptation | License evidence |
-|---|---|---|
-| Modern and Deluxe blue, fall, summer and winter `[bg-main]` JPEGs | 2026-10-16: Replaced embedded wordmarks. See [the change](https://github.com/UltraStar-CE/Themes/commit/63af239) and each theme's USCE-BRANDING.md. | Permission to adapt the underlying backgrounds remains unverified. |
-| Modern blue and winter, Deluxe fall and summer `[bg-load]` PNGs | 2026-10-19: Retained the original photographs and replaced their wordmarks. The skin changes identify the original JPEGs. [Source](https://github.com/UltraStar-CE/Themes/commit/5cd309f) | Permission to adapt the underlying photos remains unverified. |
-| Modern `[main]songCover.png` | 2026-10-19: Rebranded the inherited cover badge. [Source](https://github.com/UltraStar-CE/Themes/commit/cd9bb3a) | Permission to adapt the underlying badge remains unverified. |
-| Modern `[bg-song]blue-wide.png` | 2026-10-31: Adapted the Blue gradient and artwork for the wider search header. [Source](https://github.com/UltraStar-CE/Themes/commit/f9bc68f) | The port refers to inherited licensing without identifying asset-specific terms. |
+See [theme credits](CREDITS.md) for the original theme designers and source
+projects. This is a collection with different terms for individual works. Keep
+the applicable copyright and license notices with each copy of a theme,
+including archives and bundles that ship only a subset of the collection.
 
-[Themes #42](https://github.com/UltraStar-CE/Themes/pull/42) proposes replacements
-for the affected backgrounds using new artwork and the USCE wordmark. The
-[badge removal](https://github.com/UltraStar-CE/Themes/pull/41) is paired with the
-game's [rendered cover tiles](https://github.com/UltraStar-CE/USCE/pull/465).
-These changes are pending. The table describes the audited snapshot.
+## Recorded terms
 
-## Other theme sources
+| Scope | Source and accompanying files |
+| --- | --- |
+| Clarity theme definition, skin and original Clarity textures | [Clarity's source note](Clarity/PROVENANCE.md) and [copy of the pinned USCE license text](Clarity/LICENSE). Modern assets used through inheritance have their own source notices. |
+| Karaoke theme definition and original generated layout artwork | [Pinned Karaoke source and artwork generator](https://github.com/3Ryuusei3/USDX/tree/82668398840dc06d1c30ba82ab13090385ff14c0/tools/theme-karaoke), [credits](Karaoke/CREDITS.txt) and [GPL license text](Karaoke/LICENSE). Bundled fonts retain their own licenses. |
+| Karaoke and Midnight Inter fonts | [Inter](https://github.com/rsms/inter), SIL OFL 1.1. The font files report build `4.001;git-9221beed3`. Notices are installed with [Karaoke](Karaoke/fonts/Inter/LICENSE.txt) and [Midnight](Midnight/fonts/Inter/LICENSE.txt). |
+| Karaoke JetBrains Mono fonts | [JetBrains Mono 2.304](https://github.com/JetBrains/JetBrainsMono/tree/v2.304), SIL OFL 1.1. [Bundled OFL text and copyright](Karaoke/fonts/JetBrainsMono/OFL.txt). |
+| Midnight Liberation Sans fonts | [Liberation Sans 2.1.4](https://github.com/liberationfonts/liberation-fonts/tree/2.1.4), SIL OFL 1.1. [Bundled OFL text and copyright](Midnight/fonts/LiberationSans/LICENSE.txt). |
+| Modern and standalone Neon rating icons | Modern and standalone Neon ship identical PNGs. See [asset-level attribution, conversion and license links](Modern/ASSET-NOTICES.md). Other themes' rating files have different blobs and need their own source verification. |
 
-- **Karaoke:** Adapted on 2026-10-30 from [3Ryuusei3's source revision](https://github.com/3Ryuusei3/USDX/tree/82668398840dc06d1c30ba82ab13090385ff14c0).
-  Of 429 graphics, 412 match blobs in that source. The other 17 are the
-  `K_*.png` card, panel, dot and rating textures, and
-  `arrow-left.png`, `arrow-right.png`, `flat.png`, `key-esc.png`,
-  `key-t.png`, `results-card.png`, `score-circle.png` and `score-fill.png`.
-  [The adaptation](https://github.com/UltraStar-CE/Themes/pull/27) identifies
-  added UI shapes as procedural. [Credits](Karaoke/CREDITS.txt) and the
-  bundled Inter and JetBrains Mono license files accompany the theme.
-- **Midnight:** Adapted on 2026-10-30 from [aveiver's design](https://github.com/aveiver/USDX/tree/6f756edb2d91aaa552c46516c22300d6116fc2eb).
-  None of its 40 graphics match blobs in that source revision.
-  [Credits](Midnight/CREDITS.txt) identify its white masks as procedural.
-  Inter and Liberation Sans retain their accompanying notices.
-- **Clarity:** See the existing [provenance notice](Clarity/PROVENANCE.md).
-- **Halloween:** See the [generation and source note](Halloween/README.md).
-  Artwork inherited from Modern follows the terms for the corresponding Modern files.
+## USCE adaptations
 
-Image counts refer to Themes snapshot `4b57afb9401bc285b199229b9bcb0653dc5ce05d`.
+- Modern and Deluxe menu and loading artwork was adapted in
+  [63af239](https://github.com/UltraStar-CE/Themes/commit/63af239) and
+  [5cd309f](https://github.com/UltraStar-CE/Themes/commit/5cd309f). Themes
+  [#42](https://github.com/UltraStar-CE/Themes/pull/42) replaced edited
+  backgrounds with independently produced artwork, with [sources and build
+  instructions](.github/artwork-source/README.md). Themes
+  [#44](https://github.com/UltraStar-CE/Themes/pull/44) subsequently restored
+  the previous Modern Blue main background. Its inherited artwork remains
+  in the unresolved inventory below.
+- Themes [#41](https://github.com/UltraStar-CE/Themes/pull/41) removed the old
+  fallback badges. USCE [#465](https://github.com/UltraStar-CE/USCE/pull/465)
+  supplies rendered title tiles in their place.
+- [Midnight's credits](Midnight/CREDITS.txt) distinguish the source design
+  from the procedural textures in this collection. Its skin inherits Modern.
+- [Halloween's source note](Halloween/README.md) identifies its generated
+  background and avatars. Its inherited Modern assets use the Modern notices.
+
+## Evidence still needed
+
+| Scope | Current evidence and follow-up |
+| --- | --- |
+| `Modern/[bg-main]blue.jpg` | The restored file matches the edited inherited file immediately before #42. Confirm terms for the original artwork or use a separately sourced replacement. |
+| Verdure Drippin and Springtime media | Their skin headers credit dreamscene.org and describe the videos as free for private or non-commercial use with all rights reserved. Find the original terms or explicit permission covering redistribution and the edited derivatives. The eight `[bg-video]*.avi` files and the static stills `[bg]drippin.jpg` and `[bg]springtime.jpg` need review together. |
+| WorldParty Argon and Neon | The creator credit is recorded. Argon skin headers credit some icons to Iconfinder under a generic Creative Commons reference. Identify the original listing, creator, exact license and icon files. Verify the sources and terms for the four bundled WorldParty video backgrounds independently. |
+| Candy, Deluxe and standalone Neon background videos | The theme sources establish the theme credits. Original video authorship and terms remain unverified for Candy's `[bg-main]clouds.AVI` and `[bg-main]options.AVI`, Deluxe's `[bg-video]_ocean.avi` and `[bg-video]ribbon.mov`, and Neon's `[bg-main]smoke.mp4` and `[bg-main]smoke_neon_sign.mp4`. |
+| Remaining inherited graphics | Where individual files lack a traceable source or permission, preserve the existing credits and obtain asset-specific evidence or source a replacement. The general Tango comments in some skin INIs and the theme creator field alone do not identify the licensing of every graphic. |
+
+For new or modified artwork, record the affected path, creator, original source,
+license identifier and text or permission reference, and what changed. Include
+required notices in the theme folder so a separately distributed skin or theme
+can carry them. A screenshot review, a creator credit and a public source URL
+each document different things from redistribution permission.
